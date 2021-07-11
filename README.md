@@ -48,7 +48,6 @@ switch1#sh management api netconf
 Enabled:            Yes
 Server:             running on port 830, in MGMT VRF
 ```
-
 # ncclient demo
 
 ```
@@ -66,7 +65,7 @@ True
 >>>
 >>> conf = '''
 ... <config>
-...     <system>
+...     <system xmlns="http://openconfig.net/yang/system">
 ...         <config>
 ...             <domain-name>abc.xyz</domain-name>
 ...         </config>
@@ -78,7 +77,7 @@ True
 <rpc-reply xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="urn:uuid:33ca18d3-43b5-4277-a6ce-9a751f74cada"><ok></ok></rpc-reply>
 >>>
 >>> domain_name='''
-... <system>
+... <system xmlns="http://openconfig.net/yang/system">
 ...     <config>
 ...         <domain-name>
 ...         </domain-name>
@@ -143,6 +142,8 @@ True
 >>>
 >>> exit()
 ```
+
+There are many other python scripts using ncclient in this repository
 # NETCONF over SSH demo
 
 - NETCONF is defined in the RFC 6241.
