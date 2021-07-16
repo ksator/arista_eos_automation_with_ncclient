@@ -58,3 +58,5 @@ print (get_int_eth3_op_status)
 # Other examples
 eos.get(filter=("subtree", "<system><aaa><authentication><users><user><username></username></user></users></authentication></aaa></system>"))
 eos.get(filter=("subtree", "<system><aaa><authentication><users><user><username>arista</username></user></users></authentication></aaa></system>"))
+
+eos.close_session()

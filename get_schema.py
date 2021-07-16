@@ -40,4 +40,4 @@ get_reply = eos.get(filter=("subtree", subtree))
 print(get_reply.ok)
 # print(get_reply)
 
-
+eos.close_session()

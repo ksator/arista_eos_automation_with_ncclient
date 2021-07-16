@@ -45,3 +45,5 @@ print (get_interface_ethernet3)
 ns = {None: 'http://openconfig.net/yang/interfaces'}
 description = get_interface_ethernet3.data.find(".//interfaces/interface/config/description", namespaces=ns)
 print(description.text)
+
+eos.close_session()
